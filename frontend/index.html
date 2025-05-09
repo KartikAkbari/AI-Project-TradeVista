@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TradeVista - Portfolio Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>TradeVista - Portfolio Assistant</h1>
+
+  <section>
+    <h2>Recommend Portfolio</h2>
+    <label>Amount: <input type="number" id="amount" /></label>
+    <label>Duration (Months): <input type="number" id="duration" /></label>
+    <label>Risk:
+      <select id="risk">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+    </label>
+    <button onclick="recommendPortfolio()">Get Recommendation</button>
+    <pre id="recommendationResult"></pre>
+  </section>
+
+  <section>
+    <h2>Compare Stocks</h2>
+    <label>Stocks (comma separated): <input type="text" id="compareStocks" /></label>
+    <button onclick="compareStocks()">Compare</button>
+    <pre id="comparisonResult"></pre>
+  </section>
+
+  <section>
+    <h2>Advise Portfolio</h2>
+    <label>Stocks: <input type="text" id="adviseStocks" /></label>
+    <label>Weights: <input type="text" id="adviseWeights" /></label>
+    <button onclick="advisePortfolio()">Get Advice</button>
+    <pre id="adviceResult"></pre>
+  </section>
+
+  <section>
+    <h2>Optimize Portfolio</h2>
+    <label>Stocks (comma separated): <input type="text" id="optimizeStocks" /></label>
+    <button onclick="optimizePortfolio()">Optimize</button>
+    <pre id="optimizeResult"></pre>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

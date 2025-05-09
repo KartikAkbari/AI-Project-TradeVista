@@ -1,0 +1,3 @@
+The link for the dataset is as follow:-
+https://www.kaggle.com/datasets/ujjvalpatel1003/nse-historical-data
+1990-2023 
